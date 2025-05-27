@@ -1,0 +1,28 @@
+{
+  "name": "email-sender",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --watch ./api/server.js",
+    "convertir-jsx": " esbuild controller/EmailController.jsx --bundle --outfile=dist/EmailController.js --format=esm"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@react-email/components": "^0.0.41",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "resend": "^4.5.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.5"
+  }
+}
+
