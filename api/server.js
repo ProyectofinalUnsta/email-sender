@@ -16,9 +16,15 @@ app.use(cors({
 }))
 
 
-app.get('/', async (req,res)=> {
+app.get('/',(req,res)=> {
+  res.send('server is working!')
+})
+
+
+app.post('/registro', async (req,res)=> {
+  const {mail} = req.body
   try {
-     let respuesta = await EmailController.testSend('hola desde servicio', 'finalproyecto36@gmail.com')
+     let respuesta = await EmailController.testSend(mail)
   res.status(200).send(respuesta)
   }catch(err){
     res.status(500).send(err)
@@ -27,8 +33,9 @@ app.get('/', async (req,res)=> {
 })
 
 app.get('/codigo', async (req,res)=> {
+  const {codigo,mail} = req.body
   try {
-       let respuesta = await EmailController.TestSendCode('682136cafec96ffeb1f70661','finalproyecto36@gmail.com')
+       let respuesta = await EmailController.TestSendCode(codigo,mail)
        res.status(200).send(respuesta)
   }catch(err){
     res.status(500).send(err)

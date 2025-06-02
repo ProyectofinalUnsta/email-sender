@@ -26146,12 +26146,9 @@ var import_react4 = __toESM(require_react(), 1);
 // const/config.js
 var config = {};
 if (process.env.MODE === "development") {
-  config.url = 3035, config.resendKey = "re_17i3JyTT_7ETQEn5zSTomr75QqAHh1LbD";
-  config.email = "finalproyecto36@gmail.com";
+  config.url = 3035, config.resendKey = "re_17i3JyTT_7ETQEn5zSTomr75QqAHh1LbD", config.sender = "no-reply@eventumnoreply.mateoloz.cloud", config.email = "finalproyecto36@gmail.com";
 } else {
-  config.url = process.env.PORT;
-  config.resendKey = process.env.RESEND_API_KEY;
-  config.email = process.env.EMAIL;
+  config.url = process.env.PORT, config.resendKey = process.env.RESEND_API_KEY, config.email = process.env.EMAIL, config.sender = process.env.SENDER;
 }
 var config_default = config;
 
@@ -26867,7 +26864,7 @@ var RegistroExitoso = () => /* @__PURE__ */ import_react2.default.createElement(
   }
 ), /* @__PURE__ */ import_react2.default.createElement(Text3, { style: footer }, "Eventum Team @2025."), /* @__PURE__ */ import_react2.default.createElement(Text3, { style: footer }, "Yerba buena, Tucuman Argentina"))));
 var main = {
-  background: "linear-gradient(135deg, #ffffff 0%, #f4f0ff 100%)",
+  background: "linear-gradient(135deg, #ffffff 0%,rgb(237, 230, 255) 100%)",
   fontFamily: '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif'
 };
 var container = {
@@ -26929,7 +26926,7 @@ var CodigoDisertante = ({ codigo }) => {
   ), /* @__PURE__ */ import_react3.default.createElement(Text3, { style: footer2 }, "Eventum Team @2025."), /* @__PURE__ */ import_react3.default.createElement(Text3, { style: footer2 }, "Yerba buena, Tucuman Argentina"))));
 };
 var main2 = {
-  background: "linear-gradient(135deg, #ffffff 0%, #f4f0ff 100%)",
+  background: "linear-gradient(135deg, #ffffff 0%,rgb(237, 230, 255) 100%)",
   fontFamily: "Arial,sans-serif"
 };
 var container2 = {
@@ -27011,15 +27008,15 @@ var footer2 = {
 };
 
 // controller/EmailController.jsx
-var resend = new Resend(config_default.resendKey);
+var resend = new Resend("re_17i3JyTT_7ETQEn5zSTomr75QqAHh1LbD");
 var EmailController = class {
-  static async testSend(msj, destino) {
+  static async testSend(destino) {
     try {
       const data = await resend.emails.send({
-        from: "onboarding@resend.dev",
+        from: config_default.sender,
         to: destino,
-        subject: "Test from service",
-        react: /* @__PURE__ */ import_react4.default.createElement(RegistroExitoso, { msj })
+        subject: "Registro Eventum",
+        react: /* @__PURE__ */ import_react4.default.createElement(RegistroExitoso, null)
       });
       return data;
     } catch (err) {
@@ -27029,7 +27026,7 @@ var EmailController = class {
   static async TestSendCode(codigo, destino) {
     try {
       const data = await resend.emails.send({
-        from: "onboarding@resend.dev",
+        from: config_default.sender,
         to: destino,
         subject: "Codigo de Evento",
         react: /* @__PURE__ */ import_react4.default.createElement(CodigoDisertante, { codigo })

@@ -4,17 +4,16 @@ import config from '../const/config.js';
 import { RegistroExitoso } from '../emails/RegistroExitoso.jsx';
 import { CodigoDisertante } from '../emails/CodigoDisertante.jsx';
 
-const resend = new Resend(config.resendKey);
-
+const resend = new Resend('re_17i3JyTT_7ETQEn5zSTomr75QqAHh1LbD');
 
 export class EmailController  {
-  static async testSend (msj,destino) {
+  static async testSend (destino) {
     try {
         const data = await resend.emails.send({
-            from: 'onboarding@resend.dev',
+            from: config.sender,
             to: destino,
-            subject:'Test from service',
-            react: <RegistroExitoso msj={msj}/>
+            subject:'Registro Eventum',
+            react: <RegistroExitoso/>
         })
         return data
     }
@@ -25,7 +24,7 @@ export class EmailController  {
   static async TestSendCode (codigo,destino) {
      try {
         const data = await resend.emails.send({
-            from: 'onboarding@resend.dev',
+            from: config.sender,
             to: destino,
             subject:'Codigo de Evento',
             react: <CodigoDisertante codigo={codigo}/>
