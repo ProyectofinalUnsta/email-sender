@@ -26864,7 +26864,7 @@ var RegistroExitoso = () => /* @__PURE__ */ import_react2.default.createElement(
   }
 ), /* @__PURE__ */ import_react2.default.createElement(Text3, { style: footer }, "Eventum Team @2025."), /* @__PURE__ */ import_react2.default.createElement(Text3, { style: footer }, "Yerba buena, Tucuman Argentina"))));
 var main = {
-  background: "linear-gradient(135deg, #ffffff 0%,rgb(237, 230, 255) 100%)",
+  background: "linear-gradient(135deg, #ffffff 0%,rgb(224, 211, 255) 100%)",
   fontFamily: '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif'
 };
 var container = {
@@ -26926,7 +26926,7 @@ var CodigoDisertante = ({ codigo }) => {
   ), /* @__PURE__ */ import_react3.default.createElement(Text3, { style: footer2 }, "Eventum Team @2025."), /* @__PURE__ */ import_react3.default.createElement(Text3, { style: footer2 }, "Yerba buena, Tucuman Argentina"))));
 };
 var main2 = {
-  background: "linear-gradient(135deg, #ffffff 0%,rgb(237, 230, 255) 100%)",
+  background: "linear-gradient(135deg, #ffffff 0%,rgb(224, 211, 255) 100%)",
   fontFamily: "Arial,sans-serif"
 };
 var container2 = {

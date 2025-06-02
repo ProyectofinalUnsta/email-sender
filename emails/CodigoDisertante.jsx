@@ -56,7 +56,7 @@ return(
 
 
 const main = {
-  background: 'linear-gradient(135deg, #ffffff 0%,rgb(237, 230, 255) 100%)',
+  background: 'linear-gradient(135deg, #ffffff 0%,rgb(224, 211, 255) 100%)',
   fontFamily: 'Arial,sans-serif',
 };
 
