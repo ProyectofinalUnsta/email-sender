@@ -26153,7 +26153,7 @@ if (process.env.MODE === "development") {
 var config_default = config;
 
 // const/imagen.js
-var url = "https://ibb.co/4w1qTSjD";
+var url = "https://i.ibb.co/Y4PyLpVD/logo.webp";
 var imagen_default = url;
 
 // const/login.js

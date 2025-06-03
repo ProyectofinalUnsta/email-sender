@@ -1,3 +1,3 @@
-const url = 'https://ibb.co/4w1qTSjD'
+const url = 'https://i.ibb.co/Y4PyLpVD/logo.webp'
 
 export default url
