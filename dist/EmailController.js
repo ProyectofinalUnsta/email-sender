@@ -26153,7 +26153,7 @@ if (process.env.MODE === "development") {
 var config_default = config;
 
 // const/imagen.js
-var url = "https://i.ibb.co/Y4PyLpVD/logo.webp";
+var url = "https://i.ibb.co/LzsCXB62/Whats-App-Image-2025-06-02-at-23-35-30-b11739e9.jpg";
 var imagen_default = url;
 
 // const/login.js
