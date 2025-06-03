@@ -1,3 +1,3 @@
-const login = 'https://front-end-psi-tan-34.vercel.app/login'
+const login = 'https://eventum.lat/login'
 
 export default login

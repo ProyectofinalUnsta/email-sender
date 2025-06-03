@@ -26157,7 +26157,7 @@ var url = "https://i.ibb.co/Y4PyLpVD/logo.webp";
 var imagen_default = url;
 
 // const/login.js
-var login = "https://front-end-psi-tan-34.vercel.app/login";
+var login = "https://eventum.lat/login";
 var login_default = login;
 
 // emails/RegistroExitoso.jsx
