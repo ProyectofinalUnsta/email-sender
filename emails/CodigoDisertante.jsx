@@ -11,8 +11,8 @@ return(
       <Container style={container}>
         <Img
           src={url}
-          width="112"
-          height="88"
+          width="100"
+          height="100"
           alt="Plaid"
           style={logo}
         />
@@ -35,7 +35,7 @@ return(
         <Img
           src={url}
           width={38}
-          height={28}
+          height={38}
           style={{
             WebkitFilter: 'grayscale(100%)',
             filter: 'grayscale(100%)',

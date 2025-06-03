@@ -26847,7 +26847,7 @@ var RegistroExitoso = () => /* @__PURE__ */ import_react2.default.createElement(
   {
     src: imagen_default,
     width: 55,
-    height: 38,
+    height: 55,
     alt: "Eventum Team"
   }
 ), /* @__PURE__ */ import_react2.default.createElement(Heading, { style: heading }, " \u2728\u2728 Registro exitoso! \u2728\u{1F389}"), /* @__PURE__ */ import_react2.default.createElement(Section, { style: body }, /* @__PURE__ */ import_react2.default.createElement(Text3, { style: paragraph }, "Bienvenido a Eventum!,", /* @__PURE__ */ import_react2.default.createElement(Link, { style: link, href: login_default }, "\u{1F449} Haz Click para logearte \u{1F448}")), /* @__PURE__ */ import_react2.default.createElement(Text3, { style: paragraph }, "Si no solicito este email por Favor, ignorelo")), /* @__PURE__ */ import_react2.default.createElement(Text3, { style: paragraph }, /* @__PURE__ */ import_react2.default.createElement("br", null), "- Eventum Team"), /* @__PURE__ */ import_react2.default.createElement(Hr2, { style: hr3 }), /* @__PURE__ */ import_react2.default.createElement(
@@ -26855,7 +26855,7 @@ var RegistroExitoso = () => /* @__PURE__ */ import_react2.default.createElement(
   {
     src: imagen_default,
     width: 38,
-    height: 28,
+    height: 38,
     style: {
       WebkitFilter: "grayscale(100%)",
       filter: "grayscale(100%)",
@@ -26906,8 +26906,8 @@ var CodigoDisertante = ({ codigo }) => {
     Img,
     {
       src: imagen_default,
-      width: "112",
-      height: "88",
+      width: "100",
+      height: "100",
       alt: "Plaid",
       style: logo
     }
@@ -26916,7 +26916,7 @@ var CodigoDisertante = ({ codigo }) => {
     {
       src: imagen_default,
       width: 38,
-      height: 28,
+      height: 38,
       style: {
         WebkitFilter: "grayscale(100%)",
         filter: "grayscale(100%)",

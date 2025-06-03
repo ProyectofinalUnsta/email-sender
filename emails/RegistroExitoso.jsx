@@ -25,7 +25,7 @@ export const RegistroExitoso = () => (
         <Img
           src={url}
           width={55}
-          height={38}
+          height={55}
           alt="Eventum Team"
         />
         <Heading style={heading}> ✨✨ Registro exitoso! ✨🎉</Heading>
@@ -47,7 +47,7 @@ export const RegistroExitoso = () => (
         <Img
           src={url}
           width={38}
-          height={28}
+          height={38}
           style={{
             WebkitFilter: 'grayscale(100%)',
             filter: 'grayscale(100%)',
