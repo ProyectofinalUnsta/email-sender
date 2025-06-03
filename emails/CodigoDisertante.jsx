@@ -30,7 +30,7 @@ return(
             finalproyecto36@gmail.com
           </Link>{' '}
          Si no solicito este codigo
-        </Text>
+        </Text> 
         <Hr style={hr} />
         <Img
           src={url}

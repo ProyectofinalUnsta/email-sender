@@ -26153,7 +26153,7 @@ if (process.env.MODE === "development") {
 var config_default = config;
 
 // const/imagen.js
-var url = "https://vercel.com/api/v0/deployments/dpl_DoPrXgRULZnd6dRUwEsZ88udyotq/favicon?project=front-end&readyState=READY&teamId=team_9kPgmFoP855SFHIB5N8D5AMv";
+var url = "https://ibb.co/4w1qTSjD";
 var imagen_default = url;
 
 // const/login.js
