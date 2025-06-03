@@ -26153,7 +26153,7 @@ if (process.env.MODE === "development") {
 var config_default = config;
 
 // const/imagen.js
-var url = "https://i.postimg.cc/3N4FyFz3/logo-1.png";
+var url = "https://www.eventum.lat/assets/logo2-BOmpSuto.webp";
 var imagen_default = url;
 
 // const/login.js
