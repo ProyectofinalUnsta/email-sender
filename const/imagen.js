@@ -1,3 +1,3 @@
-const url = 'https://www.eventum.lat/assets/logo2-BOmpSuto.webp'
+const url = './assets/logo.webp'
 
 export default url
