@@ -32,7 +32,7 @@ app.post('/registro', async (req,res)=> {
  
 })
 
-app.get('/codigo', async (req,res)=> {
+app.post('/codigo', async (req,res)=> {
   const {codigo,mail} = req.body
   try {
        let respuesta = await EmailController.TestSendCode(codigo,mail)
