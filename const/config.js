@@ -1,9 +1,9 @@
 const config = {}
 
-if(process.env.MODE === 'development') {
+if(process.env.MODE === 'Development') {
     config.url = 3035,
     config.resendKey = 're_17i3JyTT_7ETQEn5zSTomr75QqAHh1LbD',
-    config.sender = 'no-reply@eventumnoreply.mateoloz.cloud',
+    config.sender = 'no-reply@eventum.lat',
     config.email = 'finalproyecto36@gmail.com'
 }
 else {

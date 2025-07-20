@@ -1,148 +1,144 @@
 import React from 'react';
+
+import {
+  Body,
+  Container,
+  Head,
+  Heading,
+  Html,
+  Img,
+  Link,
+  Preview,
+  Text,
+} from '@react-email/components';
+
 import url from '../const/imagen';
-import { Body,Container,Head,Heading,Html,Img,Link,Section,Text,Hr } from '@react-email/components';
 
-export const CodigoDisertante = ({codigo}) => {
+const event_Url = (event_id) => {
+    const url = `https://www.eventum.lat/Eventos/${event_id}`
+    return url
+}
 
-return(
- <Html>
+
+export const CodigoDisertante = ({event_name,event_id,event_code}) => (
+
+  <Html>
     <Head />
     <Body style={main}>
+      <Preview>Evento {event_id} Creado con exito!</Preview>
       <Container style={container}>
-        <Img
-          src={url}
-          width="100"
-          height="100"
-          alt="Plaid"
-          style={logo}
-        />
-        <Text style={tertiary}>Evento Creado con exito!</Text>
-        <Heading style={secondary}>
-          Este código permite subir archivos fácilmente desde la plataforma.
-        </Heading>
-        <Section style={codeContainer}>
-          <Text style={code}>{codigo}</Text>
-        </Section>
-        <Text style={paragraph}>No esperaba este Email?</Text>
-        <Text style={paragraph}>
-          Contactarse{' '}
-          <Link href="finalproyecto36@gmail.com" style={link}>
-            finalproyecto36@gmail.com
-          </Link>{' '}
-         Si no solicito este codigo
-        </Text> 
-        <Hr style={hr} />
-        <Img
-          src={url}
-          width={38}
-          height={38}
+        <Heading style={h1}>Evento {event_name} Creado con exito!</Heading>
+        <Link
+          href={event_Url(event_id)}
+          target="_blank"
           style={{
-            WebkitFilter: 'grayscale(100%)',
-            filter: 'grayscale(100%)',
-            margin: '20px 0',
+            ...link,
+            display: 'block',
+            marginBottom: '16px',
           }}
+        >
+       Click Para ver Evento
+        </Link>
+        <Text style={{ ...text, marginBottom: '14px' }}>
+        Codigo para disertantes:
+        </Text>
+        <code style={code}>{event_code}</code>
+        <Text
+          style={{
+            ...text,
+            color: '#ababab',
+            marginTop: '14px',
+            marginBottom: '16px',
+          }}
+        >
+          Con este codigo los disertantes podran subir archivos.
+        </Text>
+        <Text
+          style={{
+            ...text,
+            color: '#ababab',
+            marginTop: '12px',
+            marginBottom: '38px',
+          }}
+        >
+          Tip: Este codigo no puede ser modificado.
+        </Text>
+        <Img
+          src={url}
+          width="32"
+          height="32"
+          alt="Eventum Logo"
         />
-        <Text style={footer}>Eventum Team @2025.</Text>
         <Text style={footer}>
-        Yerba buena, Tucuman Argentina
+          <Link
+            href="https://Eventumlat"
+            target="_blank"
+            style={{ ...link, color: '#898989' }}
+          >
+            Eventum.lat
+          </Link>
+          , eventos al alcance de tus manos
+          <br />
+          Eventum @2025
         </Text>
       </Container>
     </Body>
   </Html>
-)
-}
-
-
+);
 
 
 const main = {
-  background: 'linear-gradient(135deg, #ffffff 0%,rgb(224, 211, 255) 100%)',
-  fontFamily: 'Arial,sans-serif',
+  backgroundColor: '#ffffff',
 };
 
 const container = {
-  borderRadius: '5px',
-  boxShadow: '0 5px 10px rgba(20,50,70,.2)',
-  marginTop: '20px',
-  maxWidth: '400px',
-  margin: '0 auto',
-  padding: '68px 0 130px',
-};
-
-const logo = {
+  paddingLeft: '12px',
+  paddingRight: '12px',
   margin: '0 auto',
 };
 
-const tertiary = {
-   color: '#FF6363',
-  fontSize: '14px',
-  fontWeight: 700,
-  fontFamily: 'Arial,sans-serif',
-  height: '16px',
-  letterSpacing: '0',
-  lineHeight: '16px',
-  margin: '16px 8px 8px 8px',
-  textAlign: 'center' ,
-};
-
-const secondary = {
-  color: '#000',
-  display: 'inline-block',
-  fontFamily: 'Arial,sans-serif',
-  fontSize: '16px',
-  fontWeight: 500,
-  lineHeight: '24px',
-  marginBottom: '0',
-  marginTop: '0',
-  textAlign: 'center',
-};
-
-const codeContainer = {
-  background: 'rgb(255, 255, 255)',
-  borderRadius: '8px',
-  margin: '16px auto 14px',
-  verticalAlign: 'middle',
-  width: '300px',
-};
-
-const code = {
+const h1 = {
   color: '#333',
-  fontFamily: 'Arial,sans-serif',
-  fontSize: '16px',
-  fontWeight: 700,
-  letterSpacing: '6px',
-  lineHeight: '30px',
-  paddingBottom: '8px',
-  paddingTop: '8px',
-  paddingLeft:'8px',
-  margin: '0 auto',
-  display: 'block',
-  textAlign: 'center',
-};
-
-const paragraph = {
-  color: '#444',
-  fontSize: '15px',
-  fontFamily: 'Arial,sans-serif',
-  letterSpacing: '0',
-  lineHeight: '23px',
-  padding: '0 40px',
-  margin: '0',
-  textAlign: 'center',
+  fontFamily:
+    "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
+  fontSize: '24px',
+  fontWeight: 'bold',
+  margin: '40px 0',
+  padding: '0',
 };
 
 const link = {
-  color: '#FF6363',
+  color: '#2754C5',
+  fontFamily:
+    "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
+  fontSize: '14px',
   textDecoration: 'underline',
 };
 
-const hr = {
-  borderColor: '#dddddd',
-  marginTop: '48px',
+const text = {
+  color: '#333',
+  fontFamily:
+    "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
+  fontSize: '14px',
+  margin: '24px 0',
 };
 
 const footer = {
-  color: '#8898aa',
+  color: '#898989',
+  fontFamily:
+    "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
   fontSize: '12px',
-  marginLeft: '4px',
+  lineHeight: '22px',
+  marginTop: '12px',
+  marginBottom: '24px',
+};
+
+const code = {
+  display: 'inline-block',
+  padding: '16px 4.5%',
+  width: '90.5%',
+  backgroundColor: '#f4f4f4',
+  borderRadius: '5px',
+  border: '1px solid #eee',
+  color: '#333',
 };

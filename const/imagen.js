@@ -1,3 +1,3 @@
-const url = 'https://i.postimg.cc/V6YWGRTx/Whats-App-Image-2025-06-02-at-23-35-30-b11739e9.jpg'
+const url = 'https://i.ibb.co/0y6Q7C17/logo2-BOmp-Suto.png'
 
 export default url
