@@ -22,9 +22,10 @@ app.get('/',(req,res)=> {
 
 
 app.post('/registro', async (req,res)=> {
-  const {mail} = req.body
+  const {mail,nombre} = req.body
+  const destino = mail
   try {
-     let respuesta = await EmailController.testSend(mail)
+    let respuesta = await EmailController.RegistroAdmin(destino,nombre)
   res.status(200).send(respuesta)
   }catch(err){
     res.status(500).send(err)
@@ -33,19 +34,37 @@ app.post('/registro', async (req,res)=> {
 })
 
 app.post('/codigo', async (req,res)=> {
-  const {codigo,mail} = req.body
+  const {event_name,event_id,codigo,mail} = req.body
   try {
-       let respuesta = await EmailController.TestSendCode(codigo,mail)
+       let respuesta = await EmailController.obtenerCodigoDisertante(event_name, event_id, codigo, mail)
        res.status(200).send(respuesta)
   }catch(err){
     res.status(500).send(err)
   }
+})
 
-  
+app.post('/archivo', async (req,res)=> {
+  const {destino,nombre} = req.body
+  try {
+    let response = await EmailController.archivoSubidoConExito(destino,nombre)
+    res.status(200).send(response)
+  } catch (err) {
+    res.status(500).send(err)
+  }
+})
+
+app.post('/inscripcion', async (req,res)=> {
+  const {destino,event_id,event_name,event_descripcion,event_img} = req.body
+  try {
+    let response = await EmailController.inscripcionExitosa(destino,event_id,event_name,event_descripcion,event_img)
+    res.status(200).send(response)
+  } catch (err) {
+    res.status(500).send(err)
+  }
 })
 
 
 
 
 
-app.listen(config.url ,() => console.log('server is running'))
+app.listen(config.url ,() => console.log(`server is running on port ${config.url}`))

@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node --watch ./api/server.js",
-    "convertir-jsx": " esbuild controller/EmailController.jsx --bundle --outfile=dist/EmailController.js --format=esm"
+    "convertir-jsx": " esbuild controller/EmailController.jsx --bundle --outfile=dist/EmailController.js --format=esm --loader:.webp=file"
   },
   "keywords": [],
   "author": "",
@@ -22,7 +22,6 @@
     "resend": "^4.5.1"
   },
   "devDependencies": {
-    "esbuild": "^0.25.5"
+    "esbuild": "^0.25.8"
   }
 }
-
