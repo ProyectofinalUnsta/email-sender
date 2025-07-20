@@ -26145,7 +26145,7 @@ var import_react7 = __toESM(require_react(), 1);
 
 // const/config.js
 var config = {};
-if (!process.env.MODE) {
+if (process.env.MODE === "Development") {
   config.url = 3035, config.resendKey = "re_17i3JyTT_7ETQEn5zSTomr75QqAHh1LbD", config.sender = "no-reply@eventum.lat", config.email = "finalproyecto36@gmail.com";
 } else {
   config.url = process.env.PORT, config.resendKey = process.env.RESEND_API_KEY, config.email = process.env.EMAIL, config.sender = process.env.SENDER;
@@ -47177,7 +47177,7 @@ var EmailController = class {
         from: config_default.sender,
         to: destino,
         subject: "Archivo subido",
-        react: /* @__PURE__ */ import_react7.default.createElement(InscripcionExitosaTemplate, { event_name, event_descripcion, event_id, event_img })
+        react: /* @__PURE__ */ import_react7.default.createElement(InscripcionExitosaTemplate, { event_id, event_name, event_descripcion, event_img })
       });
       return data;
     } catch (err) {
