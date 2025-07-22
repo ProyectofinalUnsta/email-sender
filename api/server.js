@@ -45,6 +45,7 @@ app.post('/codigo', async (req,res)=> {
 
 app.post('/archivo', async (req,res)=> {
   const {destino,nombre} = req.body
+    console.log(destino,nombre)
   try {
     let response = await EmailController.archivoSubidoConExito(destino,nombre)
     res.status(200).send(response)
@@ -55,6 +56,7 @@ app.post('/archivo', async (req,res)=> {
 
 app.post('/inscripcion', async (req,res)=> {
   const {destino,event_id,event_name,event_descripcion,event_img} = req.body
+  console.log(destino,event_id,event_name,event_descripcion,event_img)
   try {
     let response = await EmailController.inscripcionExitosa(destino,event_id,event_name,event_descripcion,event_img)
     res.status(200).send(response)
