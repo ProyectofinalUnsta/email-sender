@@ -14,11 +14,7 @@ import {
 
 import url from '../const/imagen';
 
-const event_Url = (event_id) => {
-    const url = `https://www.eventum.lat/Eventos/${event_id}`
-    return url
-}
-
+  const evento_url = 'https://www.eventum.lat/Eventos/'
 
 export const CodigoDisertante = ({event_name,event_id,event_code}) => (
 
@@ -29,7 +25,7 @@ export const CodigoDisertante = ({event_name,event_id,event_code}) => (
       <Container style={container}>
         <Heading style={h1}>Evento {event_name} Creado con exito!</Heading>
         <Link
-          href={event_Url(event_id)}
+          href={evento_url}
           target="_blank"
           style={{
             ...link,
