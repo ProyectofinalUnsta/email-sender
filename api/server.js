@@ -45,7 +45,6 @@ app.post('/codigo', async (req,res)=> {
 
 app.post('/archivo', async (req,res)=> {
   const {destino,nombre} = req.body
-    console.log(destino,nombre)
   try {
     let response = await EmailController.archivoSubidoConExito(destino,nombre)
     res.status(200).send(response)

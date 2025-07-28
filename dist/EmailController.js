@@ -46906,14 +46906,11 @@ var EventumWelcomeData = {
 
 // emails/CodigoDisertante.jsx
 var import_react4 = __toESM(require_react(), 1);
-var event_Url = (event_id) => {
-  const url2 = `https://www.eventum.lat/Eventos/${event_id}`;
-  return url2;
-};
+var evento_url = "https://www.eventum.lat/Eventos/";
 var CodigoDisertante = ({ event_name, event_id, event_code }) => /* @__PURE__ */ import_react4.default.createElement(Html, null, /* @__PURE__ */ import_react4.default.createElement(Head, null), /* @__PURE__ */ import_react4.default.createElement(Body, { style: main }, /* @__PURE__ */ import_react4.default.createElement(Preview, null, "Evento ", event_id, " Creado con exito!"), /* @__PURE__ */ import_react4.default.createElement(Container, { style: container }, /* @__PURE__ */ import_react4.default.createElement(Heading, { style: h1 }, "Evento ", event_name, " Creado con exito!"), /* @__PURE__ */ import_react4.default.createElement(
   Link,
   {
-    href: event_Url(event_id),
+    href: evento_url,
     target: "_blank",
     style: {
       ...link,
@@ -47045,8 +47042,8 @@ var ArchivoExitoso = ({ nombre }) => {
 
 // emails/InscripcionExitosa.jsx
 var import_react6 = __toESM(require_react(), 1);
-var InscripcionExitosaTemplate = ({ event_id, event_name, event_img, event_descripcion }) => {
-  const event_url = `https://Eventm.lat/Eventos/${event_id}`;
+var InscripcionExitosaTemplate = ({ event_name, event_img, event_descripcion }) => {
+  const event_url = "https://Eventm.lat/Eventos/";
   const previewText = `Inscripto a ${event_name} con exito!`;
   return /* @__PURE__ */ import_react6.default.createElement(Html, null, /* @__PURE__ */ import_react6.default.createElement(Head, null), /* @__PURE__ */ import_react6.default.createElement(
     Sc,

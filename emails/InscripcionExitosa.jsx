@@ -18,8 +18,8 @@ import {
 
 import url from "../const/imagen";
 
-export const InscripcionExitosaTemplate = ({event_id,event_name,event_img,event_descripcion}) => {
-  const event_url = `https://Eventm.lat/Eventos/${event_id}`;
+export const InscripcionExitosaTemplate = ({event_name,event_img,event_descripcion}) => {
+  const event_url = 'https://Eventm.lat/Eventos/';
   const previewText = `Inscripto a ${event_name} con exito!`
 
   return (

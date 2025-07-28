@@ -56,7 +56,7 @@ export class EmailController  {
          from: config.sender,
             to: destino,
             subject:'Archivo subido',
-            react: <InscripcionExitosaTemplate   event_id={event_id} event_name={event_name} event_descripcion={event_descripcion}  event_img={event_img}/>
+            react: <InscripcionExitosaTemplate event_id={event_id} event_name={event_name} event_descripcion={event_descripcion}  event_img={event_img}/>
     })
     return data
    } catch (err) {
