@@ -1,3 +1,3 @@
-const url = 'https://i.ibb.co/0y6Q7C17/logo2-BOmp-Suto.png'
+const url = 'https://i.ibb.co/4C3GtG4/eventum-png.png'
 
 export default url

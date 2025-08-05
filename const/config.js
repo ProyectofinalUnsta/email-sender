@@ -1,6 +1,6 @@
 const config = {}
 
-if(process.env.MODE === 'Development') {
+if(process.env.MODE !== 'production') {
     config.url = 3035,
     config.resendKey = 're_17i3JyTT_7ETQEn5zSTomr75QqAHh1LbD',
     config.sender = 'no-reply@eventum.lat',
@@ -12,5 +12,7 @@ else {
     config.email = process.env.EMAIL,
      config.sender = process.env.SENDER
 }
+
+
 
 export default config
