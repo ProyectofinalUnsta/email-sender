@@ -14,7 +14,7 @@
 ## Ruta publica
 - `/`
 
-## `/`
+## Rutas
 
 - `/registro`
 - `/codigo`
