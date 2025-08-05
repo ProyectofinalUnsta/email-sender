@@ -26145,7 +26145,7 @@ var import_react7 = __toESM(require_react(), 1);
 
 // const/config.js
 var config = {};
-if (process.env.MODE === "Development") {
+if (process.env.MODE !== "production") {
   config.url = 3035, config.resendKey = "re_17i3JyTT_7ETQEn5zSTomr75QqAHh1LbD", config.sender = "no-reply@eventum.lat", config.email = "finalproyecto36@gmail.com";
 } else {
   config.url = process.env.PORT, config.resendKey = process.env.RESEND_API_KEY, config.email = process.env.EMAIL, config.sender = process.env.SENDER;
@@ -46850,7 +46850,7 @@ var Text3 = React13.forwardRef(
 Text3.displayName = "Text";
 
 // const/imagen.js
-var url = "https://i.ibb.co/0y6Q7C17/logo2-BOmp-Suto.png";
+var url = "https://i.ibb.co/4C3GtG4/eventum-png.png";
 var imagen_default = url;
 
 // emails/WelcomeEventum.jsx
