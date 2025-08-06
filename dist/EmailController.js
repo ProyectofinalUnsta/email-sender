@@ -47081,7 +47081,7 @@ var InscripcionExitosaTemplate = ({ event_name, event_img, event_descripcion }) 
         alt: event_name,
         style: EventImage
       }
-    )), /* @__PURE__ */ import_react6.default.createElement(Section, { style: { paddingBottom: "20px" } }, /* @__PURE__ */ import_react6.default.createElement(Row, null, /* @__PURE__ */ import_react6.default.createElement(Text3, { style: heading }, "Inscripto a ", event_name, " con exito!"), /* @__PURE__ */ import_react6.default.createElement(Text3, { style: review }, '"', event_descripcion, '"'), /* @__PURE__ */ import_react6.default.createElement(Text3, { style: paragraph }, "Ahora tendras acceso a todo el contenido relacionado al evento ", event_name, "."), /* @__PURE__ */ import_react6.default.createElement(Button, { className: " w-full text-center text-lg rounded-lg bg-brand px-[18px] py-3 text-white", href: event_url }, "Ir al Evento"))), /* @__PURE__ */ import_react6.default.createElement(Section, null, /* @__PURE__ */ import_react6.default.createElement(Row, null, /* @__PURE__ */ import_react6.default.createElement(Hr2, { style: hr4 }), /* @__PURE__ */ import_react6.default.createElement(Text3, { style: footer2 }, "Eventum, Yerba buena, Tucuman, Argentina")))))
+    )), /* @__PURE__ */ import_react6.default.createElement(Section, { style: { paddingBottom: "20px" } }, /* @__PURE__ */ import_react6.default.createElement(Row, null, /* @__PURE__ */ import_react6.default.createElement(Text3, { style: heading }, "Inscripto a ", event_name, " con exito!"), /* @__PURE__ */ import_react6.default.createElement(Text3, { style: review }, '"', event_descripcion, '"'), /* @__PURE__ */ import_react6.default.createElement(Text3, { style: paragraph }, "Ahora tendras acceso a todo el contenido relacionado al evento ", event_name, "."), /* @__PURE__ */ import_react6.default.createElement(Button, { className: "w-full text-center text-lg rounded-lg bg-brand px-[14px] py-3 text-white", href: event_url }, "Ir al Evento"))), /* @__PURE__ */ import_react6.default.createElement(Section, null, /* @__PURE__ */ import_react6.default.createElement(Row, null, /* @__PURE__ */ import_react6.default.createElement(Hr2, { style: hr4 }), /* @__PURE__ */ import_react6.default.createElement(Text3, { style: footer2 }, "Eventum, Yerba buena, Tucuman, Argentina")))))
   ));
 };
 var main2 = {
@@ -47100,6 +47100,7 @@ var EventImage = {
   borderRadius: "50%"
 };
 var heading = {
+  alignSelf: "center",
   fontSize: "32px",
   lineHeight: "1.3",
   fontWeight: "700",

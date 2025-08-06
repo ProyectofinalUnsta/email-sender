@@ -70,7 +70,7 @@ export const InscripcionExitosaTemplate = ({event_name,event_img,event_descripci
                 Ahora tendras acceso a todo el contenido relacionado al evento {event_name}.
               </Text>
              
-              <Button className=" w-full text-center text-lg rounded-lg bg-brand px-[18px] py-3 text-white" href={event_url}>
+              <Button className="w-full text-center text-lg rounded-lg bg-brand px-[14px] py-3 text-white" href={event_url}>
                 Ir al Evento
               </Button>
             </Row>
@@ -112,6 +112,7 @@ const EventImage = {
 };
 
 const heading = {
+  alignSelf: 'center',
   fontSize: '32px',
   lineHeight: '1.3',
   fontWeight: '700',
