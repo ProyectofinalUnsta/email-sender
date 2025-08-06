@@ -46850,7 +46850,7 @@ var Text3 = React13.forwardRef(
 Text3.displayName = "Text";
 
 // const/imagen.js
-var url = "https://i.ibb.co/4C3GtG4/eventum-png.png";
+var url = "https://i.postimg.cc/j2nz1gCX/eventum-pngg.png";
 var imagen_default = url;
 
 // emails/WelcomeEventum.jsx
