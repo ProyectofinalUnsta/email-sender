@@ -27,7 +27,7 @@ export class EmailController  {
         const data = await resend.emails.send({
             from: config.sender,
             to: destino,
-            subject:'Codigo de Evento',
+            subject:`Codigo de Evento ${event_name}`,
             react: <CodigoDisertante event_code={codigo} event_id={event_id} event_name={event_name}/>
         })
         return data
@@ -41,7 +41,7 @@ export class EmailController  {
     const data = await resend.emails.send({
          from: config.sender,
             to: destino,
-            subject:'Archivo subido',
+            subject:`Archivo ${nombre} subido`,
             react: <ArchivoExitoso nombre={nombre}/>
     })
     return data
