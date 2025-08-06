@@ -46850,7 +46850,7 @@ var Text3 = React13.forwardRef(
 Text3.displayName = "Text";
 
 // const/imagen.js
-var url = "https://i.postimg.cc/j2nz1gCX/eventum-pngg.png";
+var url = "https://i.postimg.cc/RCT6SzxH/eventum-png.png";
 var imagen_default = url;
 
 // emails/WelcomeEventum.jsx
@@ -47147,7 +47147,7 @@ var EmailController = class {
       const data = await resend.emails.send({
         from: config_default.sender,
         to: destino,
-        subject: "Codigo de Evento",
+        subject: `Codigo de Evento ${event_name}`,
         react: /* @__PURE__ */ import_react7.default.createElement(CodigoDisertante, { event_code: codigo, event_id, event_name })
       });
       return data;
@@ -47160,7 +47160,7 @@ var EmailController = class {
       const data = await resend.emails.send({
         from: config_default.sender,
         to: destino,
-        subject: "Archivo subido",
+        subject: `Archivo ${nombre} subido`,
         react: /* @__PURE__ */ import_react7.default.createElement(ArchivoExitoso, { nombre })
       });
       return data;
