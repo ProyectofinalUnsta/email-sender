@@ -47173,7 +47173,7 @@ var EmailController = class {
       const data = await resend.emails.send({
         from: config_default.sender,
         to: destino,
-        subject: "Archivo subido",
+        subject: `Inscripcion a ${event_name}`,
         react: /* @__PURE__ */ import_react7.default.createElement(InscripcionExitosaTemplate, { event_id, event_name, event_descripcion, event_img })
       });
       return data;

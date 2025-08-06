@@ -55,7 +55,7 @@ export class EmailController  {
     const data = await resend.emails.send({
          from: config.sender,
             to: destino,
-            subject:'Archivo subido',
+            subject:`Inscripcion a ${event_name}`,
             react: <InscripcionExitosaTemplate event_id={event_id} event_name={event_name} event_descripcion={event_descripcion}  event_img={event_img}/>
     })
     return data
