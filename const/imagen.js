@@ -1,3 +1,3 @@
-const url = 'https://i.postimg.cc/RCT6SzxH/eventum-png.png'
+const url = 'https://ik.imagekit.io/aydzj9xba/eventum-png.png'
 
 export default url
